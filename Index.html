@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Matthew Hanneman's Site</title>
+        <link rel="stylesheet" type="text/css" href="Finalproject.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto+Slab:wght@500&family=Sacramento&family=Yesteryear&display=swap');
+        </style>
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+                <img src="Chihuahua.jpg" alt=" Chihuahua top boarder Image" class="full-width-img">
+        </div>
+
+        <!--Intro text-->
+        <div class="Intro_Text">
+            <h1 class="black-text">Matthew's Portfolio</h1>
+            <strong><br>
+                    <p>This website will give you access to work that I have done in my time at the Tech Academy and more.</p>
+                    <br> 
+                    <br> Thank you for taking the time to look at this website.
+                    <br> 
+                    <br> -Matthew Hannemann
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="Matthew.png" alt="Picture of Matthew" class="Matthew">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About Matthew</h1>
+                <p>
+                    I am trying to get into the tech field and see what it is like. The main reason for this is my long time using computers.
+                    <br>
+                    <br>If you are wondering about the dog picture, I have a 13 year old chihuahua! I have had her since I was 12 so she is very important to me.(I also like the color blue if you couldn't tell.)
+                    <br>
+                    <br>I am a soon-to-be graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS and will be learning a lot more! 
+                    <br>
+                    <br>I am fairly new to coding but love to learn more. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Matt422722" target="_blank">Matthew's Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Matt422722" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo" class="Matthew"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="Contact_me.jpg" alt="Contact_Image" class="Matthew">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/xvgpnzdo" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer>
+            <p>
+                <p class="footer"><b>&copy</b> Matthew Hannemann.
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
