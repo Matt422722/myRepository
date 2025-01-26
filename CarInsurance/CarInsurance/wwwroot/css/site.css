@@ -1,0 +1,77 @@
+/* Base Font Size */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Button and Focus Styles */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #00bcd4; /* Teal focus */
+}
+
+/* Body and HTML Styles */
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light teal background */
+    color: #333;
+}
+
+/* Buttons */
+.btn {
+    background-color: #00bcd4; /* Teal color */
+    color: white;
+    border: 1px solid #00acc1;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #008c99; /* Darker teal on hover */
+        border-color: #007c8a;
+    }
+
+/* Links */
+a {
+    color: #00bcd4; /* Teal color */
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #007c8a; /* Darker teal on hover */
+    }
+
+/* Form Controls */
+.form-control {
+    background-color: #ffffff; /* White background for input */
+    border: 1px solid #00bcd4;
+}
+
+    .form-control:focus {
+        border-color: #00acc1; /* Teal border on focus */
+        box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.25); /* Light teal glow */
+    }
+
+/* General Styles */
+.navbar, .footer {
+    background-color: #006064; /* Dark teal navbar/footer */
+    color: white;
+}
+
+    .navbar a, .footer a {
+        color: white;
+    }
+
+        .navbar a:hover, .footer a:hover {
+            color: #00bcd4; /* Teal hover for links in navbar/footer */
+        }

@@ -1,0 +1,54 @@
+﻿@model CarInsurance.Models.Insuree
+
+<h2>Create New Insuree</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="EmailAddress"></label>
+        <input asp-for="EmailAddress" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfBirth"></label>
+        <input asp-for="DateOfBirth" type="date" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="CarYear"></label>
+        <input asp-for="CarYear" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="CarMake"></label>
+        <input asp-for="CarMake" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="CarModel"></label>
+        <input asp-for="CarModel" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="DUI"></label>
+        <select asp-for="DUI" class="form-control">
+            <option value="false">No</option>
+            <option value="true">Yes</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="SpeedingTickets"></label>
+        <input asp-for="SpeedingTickets" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="CoverageType"></label>
+        <select asp-for="CoverageType" class="form-control">
+            <option value="false">Liability</option>
+            <option value="true">Full Coverage</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

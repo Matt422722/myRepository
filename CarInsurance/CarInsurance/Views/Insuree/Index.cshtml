@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CarInsurance.Models.Insuree>
+
+<h2>Insuree List</h2>
+<a asp-action="Create" class="btn btn-primary">Add New Insuree</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Car</th>
+            <th>DUI</th>
+            <th>Speeding Tickets</th>
+            <th>Coverage Type</th>
+            <th>Quote</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName @item.LastName</td>
+                <td>@item.EmailAddress</td>
+                <td>@item.CarYear @item.CarMake @item.CarModel</td>
+                <td>@(item.DUI ? "Yes" : "No")</td>
+                <td>@item.SpeedingTickets</td>
+                <td>@(item.CoverageType ? "Full Coverage" : "Liability")</td>
+                <td>$@item.Quote</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
